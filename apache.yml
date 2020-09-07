@@ -1,0 +1,12 @@
+---
+- name: Hello World!
+  hosts: all
+ 
+  tasks:
+ 
+  - name: install the apache2 package
+    shell: sudo apt install apache2
+  - name: we will only need to allow traffic on port 80:
+    shell: sudo ufw allow 'Apache'
+  - name: port 80 allow
+    shell: sudo ufw allow http
