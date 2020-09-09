@@ -10,5 +10,5 @@
     shell: sudo apt-get -y install apache2
   - name: Copy file with owner and permissions
     copy:
-      src: /home/gitfile/dev/index.html
-      dest: /var/www/html/index.html
+      src: /home/gitfile/dev/*
+      dest: /var/www/html/
