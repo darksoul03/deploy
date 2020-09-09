@@ -1,6 +1,8 @@
 ---
 - name: dev
   hosts: dev
+  become: yes
+
  
   tasks:
  
