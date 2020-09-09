@@ -1,9 +1,0 @@
----
-- name: RaJKumar!
-  hosts: all
- 
-  tasks:
- 
-  - name: install the apache2 package
-    shell: sudo apt install apache2
- 

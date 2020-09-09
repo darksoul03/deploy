@@ -1,0 +1,13 @@
+---
+- name: proda
+  hosts: proda
+ 
+  tasks:
+ 
+  - name: install the apache2 package
+    shell: sudo apt install apache2
+  - name: Copy file with owner and permissions
+    copy:
+      src: /home/gitfile/proda/index.html
+      dest: /var/www/html/index.html
+ 
