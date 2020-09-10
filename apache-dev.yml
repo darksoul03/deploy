@@ -1,10 +1,12 @@
 ---
 - name: dev
   hosts: all
+  become: yes
 
  
   tasks:
- 
+  - name: install the apachewdev2 package
+    shell: sudo apt-get update
   - name: install the apache2 package
     shell: sudo apt-get -y install apache2
   - name: Copy file with owner and permissions
