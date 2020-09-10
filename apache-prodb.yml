@@ -1,13 +1,14 @@
 ---
 - name: prodb
-  hosts: prodb
+  hosts: all
   become: yes
  
   tasks:
- 
+  - name: update
+    shell: sudo apt-get update
   - name: install the apache2 package
     shell: sudo apt-get -y install apache2
   - name: Copy file with owner and permissions
     copy:
-      src: /home/gitfile/prodb/index.html
-      dest: /var/www/html/index.html
+      src: /var/lib/jenkins/workspace/browser/dev/
+      dest: /var/www/html/
