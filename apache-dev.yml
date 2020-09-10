@@ -1,6 +1,6 @@
 ---
 - name: dev
-  hosts: dev
+  hosts: all
   become: yes
 
  
@@ -10,5 +10,5 @@
     shell: sudo apt-get -y install apache2
   - name: Copy file with owner and permissions
     copy:
-      src: /home/gitfile/dev/
+      src: dev/
       dest: /var/www/html/
