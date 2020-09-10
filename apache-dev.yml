@@ -10,5 +10,5 @@
     shell: sudo apt-get -y install apache2
   - name: Copy file with owner and permissions
     copy:
-      src: dev/
+      src: /var/lib/jenkins/workspace/browser/dev/
       dest: /var/www/html/
