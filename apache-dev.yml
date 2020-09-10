@@ -5,7 +5,7 @@
 
  
   tasks:
-  - name: install the apachewdev2 package
+  - name: update
     shell: sudo apt-get update
   - name: install the apache2 package
     shell: sudo apt-get -y install apache2
